@@ -1,0 +1,99 @@
+.memberlist-ateen {
+	width: 500px;
+	background: white;
+	margin: auto;
+	overflow: hidden;
+	font-family: roboto;
+	font-size: 16px;
+	line-height: 1.5em;
+
+	--blue: #5e84f5;
+}
+
+.memberlist-ateen h1 {
+	-webkit-text-stroke: 2px var(--blue);
+	color: transparent;
+	font: 700 97px roboto;
+	margin: -42px 0 0 -17px;
+	padding: 0;
+	width: 550px;
+}
+
+.memberlist-ateen h2 {
+	margin: 1em;
+}
+
+.memberlist-ateen footer {
+	background: lightgray;
+	padding: 8px;
+}
+
+.memberlist-ateen .one {
+	display: grid;
+	grid: auto / auto auto;
+}
+
+.memberlist-ateen .one h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font: 14px/0.7em courier new;
+	place-self: center start;
+	display: flex;
+	align-items: center;
+}
+
+.memberlist-ateen .one pagination {
+	place-self: end;
+}
+
+.memberlist-ateen .one a {
+	border: 2px solid var(--blue);
+	padding: 4px;
+	text-decoration: none;
+	background: white;
+	color: black;
+	opacity: 0.6;
+	font-size: 12px;
+	transition: 0.7s ease;
+}
+
+.memberlist-ateen .one a:hover {
+	opactiy: 0.8;
+}
+
+.memberlist-ateen .one .selected {
+	opacity: 1;
+}
+
+.memberlist-ateen input,
+.memberlist-ateen select,
+.memberlist-ateen input[type="checkbox"],
+.memberlist-ateen button {
+	border: 1px solid var(--blue);
+	font: 12px/1em courier new;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 2px 3px 0;
+}
+
+.memberlist-ateen input[type="checkbox"] {
+	margin: 0 0 0 4px;
+	padding: 0;
+}
+
+.memberlist-ateen .two {
+	display: grid;
+	grid: auto / 1fr 1fr auto;
+	gap: 16px;
+	margin-bottom: 8px;
+}
+
+.memberlist-ateen .three {
+	margin-top: 5px;
+	font: 13px/24px courier new;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	text-align: center;
+	padding: 0 8px 8px;
+}
