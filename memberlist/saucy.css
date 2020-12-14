@@ -1,0 +1,67 @@
+.memberlist-saucy {
+	width: 500px;
+	margin: auto;
+	display: grid;
+	grid: auto / auto auto;
+	gap: 16px;
+}
+
+.memberlist-saucy .member {
+	width: 250px;
+	position: relative;
+}
+
+.memberlist-saucy .a {
+	fill: none;
+	stroke: #b72220;
+	stroke-miterlimit: 10;
+	position: relative;
+	z-index: 5;
+	display: block;
+	margin-left: -10px;
+}
+
+.memberlist-saucy h1 {
+	position: absolute;
+	bottom: 8px;
+	left: 0;
+	background: #dfa52a;
+	padding: 4px 8px 6px;
+	font: 700 24px/0.8em playfair display;
+	min-width: 100px;
+}
+
+.memberlist-saucy h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+.memberlist-saucy ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 64px;
+	left: 40px;
+}
+
+.memberlist-saucy ul li {
+	padding: 4px 8px;
+	background: #f2f2f2;
+	margin-bottom: 8px;
+	font: 11px/0.9em courier new;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #121212;
+	opacity: 0;
+	transition: 0.8s ease;
+}
+
+.memberlist-saucy .member:hover ul li {
+	opacity: 1;
+}
+
+.memberlist-saucy ul li:nth-child(2) {
+	background: #121212;
+	color: #f2f2f2;
+}
