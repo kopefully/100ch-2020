@@ -7,6 +7,7 @@
 	display: grid;
 	grid: auto / 130px auto;
 	color: #f2f2f2;
+	text-align: left;
 }
 
 .memberlist-guyexe a {
