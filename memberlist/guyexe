@@ -1,0 +1,151 @@
+body {
+	background: black;
+}
+
+.memberlist-guyexe {
+	width: 500px;
+	margin: auto;
+	border: 2px solid #f2f2f2;
+	padding: 16px;
+	box-sizing: border-box;
+	display: grid;
+	grid: auto / 130px auto;
+	color: #f2f2f2;
+}
+
+.memberlist-guyexe a {
+	color: #eddd6a;
+	text-decoration: none;
+	transition: 0.7s ease;
+}
+
+.memberlist-guyexe a:hover {
+	color: gray;
+}
+
+.memberlist-guyexe h1,
+.memberlist-guyexe h2 {
+	text-transform: uppercase;
+	border-bottom: 2px solid;
+	letter-spacing: 3px;
+	position: relative;
+	margin: 0 -16px 16px;
+	font: 16px "press start 2p";
+}
+
+.memberlist-guyexe h1 {
+	grid-area: 1/1/2/3;
+	padding: 4px 16px 16px;
+}
+
+.memberlist-guyexe h1:after {
+	content: "\eacc";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 4px;
+	width: 20px;
+	height: 24px;
+	border: 2px solid;
+	position: absolute;
+	right: 16px;
+	top: -4px;
+	font-family: honeybee;
+}
+
+.memberlist-guyexe h2 {
+	font-size: 8px;
+	padding: 0 16px 16px;
+}
+
+.memberlist-guyexe h2:after {
+	content: "\eacc";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 4px;
+	width: 8px;
+	height: 12px;
+	border: 2px solid;
+	position: absolute;
+	right: 12px;
+	top: -5px;
+	font-family: honeybee;
+}
+
+.memberlist-guyexe .showing {
+	background: black;
+	border: 2px solid #f2f2f2;
+	width: 191px;
+	margin-left: -81px;
+	box-sizing: border-box;
+	padding: 16px;
+	text-transform: uppercase;
+	font: 13px/2.25em arial;
+}
+
+.memberlist-guyexe input,
+.memberlist-guyexe select,
+.memberlist-guyexe input[type="checkbox"],
+.memberlist-guyexe button {
+	border: 1px solid #9de6ed;
+	background: transparent;
+	text-transform: uppercase;
+	color: #f2f2f2;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.memberlist-guyexe select option {
+	background: black;
+}
+
+.memberlist-guyexe button {
+	font-weight: bold;
+	color: #eddd6a;
+}
+
+.memberlist-guyexe .showing select:nth-of-type(1), .memberlist-guyexe .showing select:nth-of-type(3), .memberlist-guyexe .showing select:nth-of-type(4) {
+	margin-bottom: 4px;
+}
+
+.memberlist-guyexe .showing input[type=text] {
+	width: 147px;
+	margin-bottom: 4px;
+}
+
+.memberlist-guyexe h3 {
+	margin: 0 0 8px 0;
+	line-height: 1em;
+	font: 13px arial;
+}
+
+.memberlist-guyexe section:nth-child(3) {
+	display: grid;
+	grid: auto / 100px 100px 100px;
+	gap: 16px;
+}
+
+.memberlist-guyexe section:nth-child(3) article {
+	display: grid;
+	place-self: start;
+	gap: 8px;
+}
+
+.memberlist-guyexe section:nth-child(3) article a {
+	font: 16px 'press start 2p';
+	text-transform: uppercase;
+	word-break: break-word;
+}
+
+.memberlist-guyexe pagination {
+	grid-area: 3/1/4/3;
+	padding: 16px 0 0;
+	place-self: end;
+}
+
+.memberlist-guyexe pagination a {
+	border: 1px solid #9de6ed;
+	padding: 8px;
+	font: 8px/1em 'press start 2p';
+}
