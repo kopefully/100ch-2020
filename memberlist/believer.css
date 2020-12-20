@@ -1,0 +1,84 @@
+.memberlist-believer {
+	width: 600px;
+	margin: auto;
+	font: 14px arial;
+	color: black;
+}
+
+.memberlist-believer h1 + section {
+	border-bottom: 3px solid #d0d9d9;
+	margin-bottom: -24px;
+	padding-bottom: 64px;
+}
+
+.memberlist-believer input,
+.memberlist-believer select,
+.memberlist-believer input[type="checkbox"],
+.memberlist-believer button {
+	border: 3px solid #d0d9d9;
+	background: transparent;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: montserrat;
+}
+
+.memberlist-believer h1,
+.memberlist-believer h2 {
+	font: 600 24px/1em montserrat;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	background: #d0d9d9;
+	padding: 32px;
+	margin: 0;
+}
+
+.memberlist-believer h2 {
+	display: inline-block;
+	padding: 16px;
+	font-size: 14px;
+	line-height: 1em;
+	margin-left: 16px;
+}
+
+.memberlist-believer .showing {
+	text-transform: uppercase;
+}
+
+.memberlist-believer > section,
+.memberlist-believer footer {
+	padding: 16px 8px;
+}
+
+.memberlist-believer footer {
+	display: grid;
+	grid: auto / 1fr 0.7fr;
+	gap: 8px;
+}
+.memberlist-believer footer section:nth-child(1) {
+	grid-area: 1/1/2/3;
+	text-transform: uppercase;
+}
+
+.memberlist-believer footer h3 {
+	margin: 0 0 8px 0;
+	text-transform: uppercase;
+	font: 400 15px/1em montserrat;
+}
+
+.memberlist-believer pagination {
+	padding: 0 0 8px;
+	place-self: end;
+}
+
+.memberlist-believer pagination a {
+	font: 600 13px/1em montserrat;
+	border: 3px solid #d0d9d9;
+	padding: 4px;
+	color: #99a1a1;
+	text-decoration: none;
+	transition: 0.7s ease;
+}
+
+.memberlist-believer pagination a:hover {
+	color: black;
+}
