@@ -1,0 +1,130 @@
+.memberlist-stfu {
+	width: 600px;
+	display: grid;
+	grid: auto / 292px 292px;
+	gap: 32px;
+	margin: auto;
+}
+
+.memberlist-stfu a {
+	color: red;
+	text-decoration: none;
+	transition: 0.7s ease;
+}
+
+.memberlist-stfu a:hover {
+	color: #363636;
+}
+
+.memberlist-stfu input[type="checkbox"] {
+	display: none;
+}
+
+.memberlist-stfu input[type="checkbox"] + label {
+	display: block;
+	position: absolute;
+	filter: grayscale(0);
+	width: 100px;
+	height: 190px;
+	position: absolute;
+	bottom: 0;
+	right: -4px;
+	z-index: 12;
+	cursor: pointer;
+	transition: 0.7s ease;
+}
+
+.memberlist-stfu input[type="checkbox"]:checked + label {
+	filter: grayscale(1);
+}
+
+.memberlist-stfu input[type="checkbox"]:checked ~ .member-container section {
+	margin-left: 0;
+}
+
+.memberlist-stfu .member {
+	position: relative;
+}
+
+.memberlist-stfu .member-image {
+	width: 250px;
+	height: 400px;
+	background-size: cover;
+	position: relative;
+}
+
+.memberlist-stfu .member-image:before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 22px;
+	border: 3px solid #fff;
+	border-left: 0;
+	border-right: 0;
+	width: 250px;
+	height: 350px;
+	z-index: 3;
+}
+
+.memberlist-stfu .member-image:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 22px;
+	left: -28px;
+	width: 300px;
+	height: 350px;
+	border: 3px solid black;
+}
+
+.memberlist-stfu h1.toggle {
+	margin: 0;
+	font: 700 300px/0.5em lora;
+	color: red;
+}
+
+.memberlist-stfu .member-container {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	height: 350px;
+	width: 250px;
+	overflow: hidden;
+	z-index: 11;
+	display: grid;
+	grid: "." auto "stfu-area" 165px / auto;
+}
+
+.memberlist-stfu h2 {
+	margin: 0 0 8px 0;
+	padding: 0;
+	font: 700 32px/0.9em lora;
+	color: red;
+	text-transform: uppercase;
+}
+
+.memberlist-stfu section {
+	background: #f3ecea;
+	padding: 16px;
+	font: 14px arial;
+	grid-area: stfu-area;
+	margin-left: 250px;
+	width: 250px;
+	transition: 0.7s ease;
+	box-sizing: border-box;
+}
+
+.memberlist-stfu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.memberlist-stfu ul.links {
+	display: flex;
+	margin-top: 8px;
+}
+
+.memberlist-stfu .links li {
+	margin-right: 8px;
+}
