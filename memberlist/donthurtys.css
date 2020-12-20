@@ -1,0 +1,103 @@
+.memberlist-donthurtys {
+	width: 600px;
+	display: grid;
+	grid: auto / 1fr 1fr 1fr;
+	gap: 32px;
+	margin: auto;
+}
+
+.memberlist-donthurtys .member {
+	width: 170px;
+	height: 170px;
+	position: relative;
+	overflow: hidden;
+}
+
+.memberlist-donthurtys .member-image {
+	background-size: cover;
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	filter: grayscale(1);
+}
+
+.memberlist-donthurtys h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0;
+	padding: 8px;
+	box-sizing: border-box;
+	height: 170px;
+	width: 170px;
+	text-transform: uppercase;
+	color: #edb828;
+	font: 700 28px/0.9em noto sans jp;
+	-webkit-text-stroke: 1px black;
+	letter-spacing: -2px;
+	transition: 0.7s ease;
+}
+
+.memberlist-donthurtys .member-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 170px;
+	height: 170px;
+	background: rgba(255, 255, 255, 0.9);
+	box-sizing: border-box;
+	padding: 24px;
+	font: 15px/1.25em arial;
+	opacity: 0;
+	transition: 0.7s ease;
+}
+
+.memberlist-donthurtys ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.memberlist-donthurtys .links {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 16px;
+}
+
+.memberlist-donthurtys .links a {
+	font-size: 20px;
+	color: #edb828;
+	transition: 0.7s ease;
+	text-decoration: none;
+}
+
+.memberlist-donthurtys .links a:hover {
+	color: gray;
+}
+
+.memberlist-donthurtys .member-info ul:nth-child(2) li {
+	position: relative;
+	padding-left: 10px;
+}
+
+.memberlist-donthurtys .member-info ul:nth-child(2) li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: -5px;
+	width: 10px;
+	height: 1px;
+	background: black;
+}
+
+.memberlist-donthurtys .member:hover h1 {
+	opacity: 0;
+}
+
+.memberlist-donthurtys .member:hover .member-info {
+	opacity: 1;
+}
